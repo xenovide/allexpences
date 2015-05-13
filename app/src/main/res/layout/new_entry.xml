@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f6f6f6"
+    android:id="@+id/new_entry">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2"
+        android:background="@drawable/shadow">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:text="  New Entry"
+            android:id="@+id/textView"
+            android:background="#F44336"
+            android:textColor="#f3efef"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6f6f6"
+        android:orientation="horizontal" >
+
+      
+
+        <EditText
+            android:id="@+id/etPurpose"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp"
+            android:textColor="#727272"
+            android:textSize="20sp"
+            android:hint="Purpose" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6f6f6"
+        android:orientation="horizontal" >
+
+       
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:padding="25dp"
+            android:layout_weight="1"
+            android:textColor="#727272"
+            android:textSize="20sp"
+            android:hint="Amount ?" >
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bSubmit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Submit"
+        android:background="@drawable/shadow3"
+        android:textColor="#727272"/>
+
+</LinearLayout>

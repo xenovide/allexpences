@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="myexpp.vaibhav.android.myapplication"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="myexpp.vaibhav.android.myapplication.Home"
+            android:label="@string/app_name"
+         
+             >
+            <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="myexpp.vaibhav.android.myapplication.NewEntry"
+            android:label="Enter Record" >
+            
+            
+        </activity>
+        <activity
+            android:name="myexpp.vaibhav.android.myapplication.UpdatePocket"
+            android:label="Update Pocket Money" >
+            
+        </activity>
+        <activity
+            android:name="myexpp.vaibhav.android.myapplication.ViewPocket"
+            android:label="View Pocket">
+        </activity>
+        <activity
+            android:name="myexpp.vaibhav.android.myapplication.MonthlyRecord"
+            android:label="Monthly Record" >
+        </activity>
+        <activity
+            android:name="myexpp.vaibhav.android.myapplication.ViewItem"
+            android:label="@string/app_name"
+           >
+             <intent-filter>
+                <action android:name="android.intent.action.VIEWITEM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+         
+            android:name="myexpp.vaibhav.android.myapplication.ViewMonth"
+            android:label="Month Record" >
+        </activity>
+        
+          <activity
+         
+            android:name="myexpp.vaibhav.android.myapplication.HelpFile"
+            android:label="Help" >
+        </activity>
+    </application>
+
+</manifest>

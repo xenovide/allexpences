@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <size android:height="4dp" />
+    <gradient
+        android:angle="90"
+        android:startColor="#50000000"
+        android:endColor="@android:color/transparent" />
+</shape>-->
+<!--
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="90"
+                android:startColor="#26000000"
+                android:endColor="@android:color/transparent" />
+        </shape>
+    </item>
+    <item android:bottom="4px" android:left="4px">
+
+        <shape android:shape="rectangle">
+            <solid android:color="#FFC107"/>
+        </shape>
+    </item>
+
+</layer-list>-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#ffffe211"/>
+            <corners
+                android:radius= "3dp"/>
+        </shape>
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <gradient
+                        android:angle="90"
+                        android:startColor="#26000000"
+                        android:endColor="@android:color/transparent" />
+                </shape>
+            </item>
+            <item android:bottom="34px" android:left="34px">
+
+                <shape android:shape="rectangle">
+                    <solid android:color="#FFC107"/>
+                </shape>
+            </item>
+
+        </layer-list>
+    </item>
+
+    <item>
+        <shape>
+            <solid android:color="#FFC107"/>
+            <corners
+                android:radius= "3dp"/>
+            <padding
+                android:left="10dp"
+                android:right="10dp"
+                android:top="10dp"
+                android:bottom="10dp"/>
+        </shape>
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <gradient
+                        android:angle="90"
+                        android:startColor="#26000000"
+                        android:endColor="@android:color/transparent" />
+                </shape>
+            </item>
+            <item android:bottom="34px" android:left="34px">
+
+                <shape android:shape="rectangle">
+                    <solid android:color="#FFC107"/>
+                </shape>
+            </item>
+
+        </layer-list>
+    </item>
+
+</selector>
+

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/viewPocketTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F44336"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/dailyAvg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow2"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:textColor="#f6f6f6"
+        android:textSize="12sp"
+        android:text="Daily"
+        android:layout_below="@+id/viewPocketTitle" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_below="@+id/dailyAvg"
+        android:id="@+id/linearLayout3">
+
+
+        <TextView
+            android:id="@+id/viewPocketPurposeTitle"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:background="#FFC107"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="Purpose"
+            android:textColor="#727272"
+            android:textSize="15sp"
+            android:autoText="true" />
+
+        <TextView
+            android:id="@+id/viewPocketAmountTitle"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:background="#FFC107"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="Amount"
+            android:textColor="#727272"
+            android:textSize="15sp"
+            android:autoText="true" />
+
+        <TextView
+            android:id="@+id/viewPocketDateTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFC107"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="Date"
+            android:textColor="#727272"
+            android:textSize="15sp"
+            android:autoText="true" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:descendantFocusability="blocksDescendants"
+        android:layout_below="@+id/linearLayout3">
+    </ListView>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img2"
+        android:src="@drawable/img_pressed"
+        android:background="#f6f6f6"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="39dp" />
+
+
+</RelativeLayout>
